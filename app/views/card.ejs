@@ -1,0 +1,16 @@
+<!-- étape 1 :  on crée la vue pour une nouvelle carte -->
+<%- include('header') %>
+
+<h1>Carte spéciale :</h1>
+
+<div class="card-container">
+    <% for(const [key, value] of Object.entries(card)) { %>
+        <div class="row">
+            <div class="key"><%= key %> </div>
+            <div class="value"><%= value %> </div>
+        </div>
+    <% } %>
+</div>
+
+
+<%- include('footer') %>
